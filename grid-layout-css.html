@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+    <title>example grid layout</title>
+    
+    <style>
+
+.grid-container > div {
+  background-color: rgb(41, 236, 41);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+    
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main main main'
+    'menu left left left right right'
+    'menu footer footer footer footer footer';
+  grid-gap: 10px;
+  background-color: rgb(79, 131, 243);
+  padding: 10px;
+  
+}
+
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: left; }
+.item5 { grid-area: right; }
+.item6 { grid-area: footer; }
+
+    </style>
+
+</head>
+<body>
+
+   <h1>Grid layout</h1>
+   <p>this grid layout six columns end four rows</p>
+
+   <div class="grid-container">
+       <div class="item1">header</div>
+       <div class="item2">menu</div>
+       <div class="item3">main</div>
+       <div class="item4">left</div>
+       <div class="item5">right</div>
+       <div class="item6">footer</div>
+
+   </div>
+
+</body>
+</html>
